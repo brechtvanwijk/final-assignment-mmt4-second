@@ -1,0 +1,687 @@
+/* reset sheet */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+.nav-middle{
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+
+}
+
+/* netflix logo */
+.nav-middle #logo-nav{
+   position: absolute;
+   float: left;
+   margin-left: 9%;
+   padding-top: 37px;
+   overflow: hidden;
+   -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
+   animation: mymove 1s ;
+}
+
+
+/* animatie logo */
+@keyframes mymove {
+      from   {    transform: rotateY(0deg);}
+to { transform: rotateY(360deg);
+
+}
+}
+
+
+nav {
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+nav ul {
+text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 41px 70px;
+   
+    }
+
+nav ul li a {   
+    top: 50%;
+    text-decoration: none;
+    float: center;
+    display: block;
+    text-align: center;
+    font: normal 16px/19px Montserrat;
+    letter-spacing: 0.8px;
+    color: #EBEBEB;
+    opacity: 1;
+}
+
+.nav-middle p {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 41px;
+    display: inline-block;
+    margin-left: 250px;
+    text-align: center;
+    font: Bold 16px/19px Montserrat;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+#login {
+    font: Bold 16px/19px Montserrat;
+    color: #ED2517;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    animation: ease-in 2s;
+}
+
+
+  /* header */ 
+
+  header{
+    width: 100%;
+    height: 675px;
+    background-color:black;
+    position: relative;
+    margin: 0 auto;
+}
+
+  .header-deel {
+    margin-right: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+#picture {
+    width:765px;
+    height:575px;
+    margin-top:100px;
+    float: right;
+    background-repeat: no-repeat;
+    background-image: url(../img/trailer\ hero\ img.png); 
+    z-index:6;
+}
+
+  .gradient-overlay {
+    position: relative;
+    z-index:3;
+    height: 675px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(255,0,0,0));
+    opacity: 0.85;
+}
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .trailerbtn {
+      background: transparent;
+  }
+
+  #playVid {
+    background: transparent;
+    border: none;
+  }
+
+  .fa-play-circle {
+    z-index: 6;
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    color: white;
+    font-size: 90px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .container .btn:hover {
+    background-color: black;
+  }
+
+/* modal */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 21; 
+    padding-top: 100px; 
+    left: 0;
+    top: 10px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.40);
+    border-radius: 9px;
+    width: 80%;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content p {
+    text-align: center;
+    font: Bold 20px/21px Montserrat;
+    letter-spacing: 1.2px;
+    color: #ED2517;
+    padding: 2px;;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 6;
+  }
+  
+  /* sluit Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.header-text {
+    position: absolute;
+    top: 200px;
+    left: 9%;
+    width: 600px;
+    height: 400px;
+    z-index:4;
+}
+
+h2 {
+    top: 515px;
+    left: 139px;
+    width: 352px;
+    height: 33px;
+    text-align: left;
+    font: Bold 12px/21px Montserrat;
+    letter-spacing: 1.2px;
+    color: #ED2517;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 6;
+}
+
+h1 {
+    top: 363px;
+    left: 139px;
+    width: 400px;
+    height: 125px;
+    text-align: left;
+    font: bold 30px/30px Montserrat;
+    line-height: 40px;;
+    letter-spacing: 0.7px;
+    color: #EBEBEB;
+    opacity: 1;
+}
+
+@keyframes header {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-text p {
+    margin-top: -20px;
+    left: 139px;
+    width:400px;
+    height: 125px;
+    text-align: left;
+    font: normal 14px/21px Montserrat;
+    letter-spacing: 0.7px;
+    color: #EBEBEB;
+    opacity: 1;
+    animation: ease-in 2s;
+}
+
+/* knop */
+
+.header-text .contact-btn {
+    background-color: #ED2517;
+    border: solid #ED2517;
+    cursor: pointer;
+    height: 58px;
+    width: 160px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact-btn a {
+    top: 525px;
+    left: 173px;
+    width: 86px;
+    height: 19px;
+    font: Bold 16px/19px var(--unnamed-font-family-montserrat);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: Bold 16px/19px Montserrat;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+
+
+/* videospeler deel */
+
+.video-part{
+ 
+    margin: 0 auto;
+    width: 100%;
+    height: 540px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    padding-top: 40px;
+    text-align: center;
+    font: Bold 12px/21px Montserrat;
+    letter-spacing: 1.2px;
+    color: #ED2517;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+h3 {
+    margin-top:10px;
+    text-align: center;
+    font: Bold 32px/50px Montserrat;
+    letter-spacing: 1.6px;
+    color: #000000;
+    opacity: 1;
+}
+
+.video-part-text p {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    font: normal 14px/21px Montserrat;
+    letter-spacing: 0.7px;
+    color: #4B4B4B;
+    opacity: 1;
+}
+
+.video-part-text .contact-btn {
+    background-color: #ED2517;
+    border: solid #ED2517;
+    height: 45px;
+    width: 160px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#video-wrap {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 1057px;
+    left: 50%;
+    height: 200px;
+    width: 900px;
+    background-color: purple;
+}
+
+.video-player {
+    background: pink;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.40);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#player-1 {
+    left: 0;
+}
+
+#player-2 {
+    transform: translate(-50%,-50%) scale(1.2);
+    z-index: 1;
+}
+
+#player-3 {
+    left: 100%;
+}
+
+/* knoppen video's */
+ 
+.video-js .vjs-big-play-button {
+    display: none;
+}
+
+.play-pause{
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.play-pause i{
+    
+    color: #ED2517;
+    font-size: 20px;
+    line-height: 45px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.play-pause .active{
+    transform: translateY(-100%);
+}
+
+.controls button{
+    background-color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.play-b1{
+    margin-left: -100px;
+    color: #ED2517;
+    font-size: 20px;
+}
+
+.play-f1{
+    margin-left: 100px;
+    color:#ED2517;
+    font-size: 20px;
+}
+
+.play-b2{
+    margin-left: -100px;
+    color: #ED2517;
+    font-size: 20px;
+}
+
+.play-f2{
+    margin-left: 100px;
+    color:#ED2517;
+    font-size: 20px;
+}
+
+.play-b3{
+    margin-left: -100px;
+    color: #ED2517;
+    font-size: 20px;
+}
+
+.play-f3{
+    margin-left: 100px;
+    color:#ED2517;
+    font-size: 20px;
+}
+
+.video-js .vjs-play-progress:before{
+    color: #ED2517;
+    font-size: 2em;
+    top: calc(-2em / 5);
+}
+
+/* footer */
+ 
+footer {
+    height: 820px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+h5 {
+    padding-top: 50px;
+    text-align: center;
+    font: Bold 32px/50px Montserrat;
+    letter-spacing: 1.6px;
+    color: #FFFFFF;
+    opacity: 1;     
+    margin-bottom: 50px;
+}
+
+
+/* panels */
+.tab-panels ul {
+    margin: 0 auto;
+    width: 290px;
+}
+
+/* achtergrond panels */
+.tab-panels ul li {
+    margin: 0 auto;
+    list-style-type: none;
+    display: inline-block;
+    background: black;
+    margin: 0;
+    padding: 10px 10px;
+    color: #fff;
+    font-weight: 200;
+    font-size:24px;
+    cursor: pointer;
+    text-align: center;
+    font: Bold 16px/19px Montserrat;
+    letter-spacing: 0.8px;
+    color: #EBEBEB;
+    opacity: 1;
+}
+
+.tab-panels ul li:hover {
+    color: #fff;
+    background:#ED2517 ;
+}
+
+.tab-panels ul li.active {
+    color: #fff;
+    background: #1A1A1A;
+    border-bottom: 2px solid #ED2517;
+}
+
+/* grijze met inhoud aka de tabs*/
+.tab-panels .panel {
+    margin: 0 auto;
+    display:none;
+    color: white;
+    background: #1A1A1A;
+    padding: 30px;
+    max-width: 800px;
+}
+
+.tab-panels .panel.active {
+    display:block;
+    margin: 0 auto;
+}
+
+
+/* panel inhoud */
+
+.inhoud-panel {
+    left: 50%;
+}
+
+.inhoud-panel p {
+    line-height: 50px;
+    letter-spacing: var(--unnamed-character-spacing-0-7);
+    text-align: center;
+    font: normal 14px/50px Montserrat;
+    letter-spacing: 0.7px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+h6 {
+    margin-top: 20px;
+    line-height: 50px;
+    letter-spacing: var(--unnamed-character-spacing-0-7);
+    text-align: center;
+    font: bold 15px/50px Montserrat;
+    letter-spacing: 0.7px;
+    color: #FFFFFF;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+/* knop footer */
+.knopdiv {
+    text-align: center;
+}
+
+.btn-pick{
+    margin: 0 auto;
+    background-color: #ED2517;
+    border: solid #ED2517;
+    cursor: pointer;
+    height: 45px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-pick a {
+    top: 525px;
+    left: 173px;
+    width: 86px;
+    height: 19px;
+    font: Bold 16px/19px var(--unnamed-font-family-montserrat);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: Bold 16px/19px Montserrat;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+    nav {
+        width: 100%;
+    }
+    
+    nav ul li {
+
+      display: inline-block;
+      text-align: center;
+      padding: 41px 40px;
+    }
+
+    .nav-middle #logo-nav{
+        margin-left: 3%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    nav ul li {
+      display: inline-block;
+      text-align: center;
+      padding: 41px 10px;
+    }
+    nav ul {
+        margin-left:80px;
+    }
+
+    .nav-middle #logo-nav{
+        margin-left: 1%;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .fa-play-circle {
+        z-index: 6;
+        position: absolute;
+        top: 65%;
+        left: 54%;
+        color: white;
+        font-size: 90px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+      }
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    
+    #player-1 {
+        top: 10px;
+        left:50%;
+    }
+
+    #player-2 {
+        top: 310px;
+        left:50%;
+        width: 390px;
+    }
+    
+    
+    #player-3 {
+        left:50%;
+       top:610px;
+       
+    }
+    #video-wrap {
+        top: 1500px;
+        height: 850px;
+        width: 100%;
+        background-color: white;
+    }
+    footer{
+        margin-top: 420px;
+    }
+    
+  }
+
+  

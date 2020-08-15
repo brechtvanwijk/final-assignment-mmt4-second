@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Brechtflix</title>
+  <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/n.png" type="image/x-icon" />
+</head>
+
+<header>
+  <div class="nav-middle">
+    <div class="navBar">
+      <nav>
+        <div id="logo-nav"><img src="img/netflix_logo.svg" alt="Logo"></div>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="login">Login</a></li>
+          
+        </ul>
+         
+      </nav>
+
+    </div>
+
+  </div>
+
+
+<div class="header-deel">
+  <div id="picture" ></div>
+  <div class="gradient-overlay"></div>
+</div>
+
+
+<button id="playVid"><i id="trailerbtn" class="fa fa-play-circle" aria-hidden="true"></i></button>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Trailer</p>
+    <iframe id="trailervideo" width="100%" height="100%" src="https://www.youtube.com/embed/b9EkMc79ZSU?autoplay=0" frameborder="0" allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</div>
+
+
+<div class="header-text">
+  <h2>A Netflix original</h2>
+  <h1>Something strange is happening in Hawkins</h1>
+  <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.</p>
+  <button class="contact-btn"><a href="#">TRY FREE</a></button>
+</div>
+</div>
+
+
+</header>
+
+<body>
+
+ 
+
+<div class="video-part">
+  <h4>Stop doing stuff, start watching</h4>
+  <h3>200+ of the best shows,<br>
+    waiting to be watched</h3>
+
+    <div id= "video-wrap">
+     
+      <div class="video-player" id="player-1">
+
+        <video
+        onclick="myFunction()"
+        id="my-video-1"
+        class="video-js"
+        controls
+        preload="auto"
+        width="470"
+        height="264"
+        poster="img/thumbnail2.png"
+        data-setup="{}"
+      >
+      <source src="https://player.vimeo.com/external/428997290.hd.mp4?s=9d50498e40913523b8ee158710c4d2a9e28b9881&profile_id=175" type=video/mp4>
+        
+       
+      </video>
+      <div class="controls">
+        <button  onclick="myFunction()" class="play-pause">
+          <i class="fa fa-play"></i>
+          <i class="fa fa-pause"></i>
+        </button>
+        <button class="play-b1" ><i class="fa fa-backward" aria-hidden="true"></i></button>
+        <button class="play-f1" ><i class="fa fa-forward" aria-hidden="true"></i></button>
+      </div>
+
+      </div>
+      <div class="video-player" id="player-2">
+
+      <video
+      onclick="myFunction2()"
+        id="my-video-2"
+        class="video-js"
+        controls
+        preload="auto"
+        width="470"
+        height="264"
+        poster="img/thumbnail1.png"
+        data-setup="{}"
+      >
+      
+        <source src="https://player.vimeo.com/external/430281824.hd.mp4?s=11f9b01d1e43ffdc32d63c1a82c4734862d156e0&profile_id=175" type=video/mp4> 
+       
+      </video>
+      <div class="controls">
+        <button onclick="myFunction2()" class="play-pause">
+          <i class="fa fa-play"></i>
+          <i class="fa fa-pause"></i>
+        </button>
+        <button class="play-b2" ><i class="fa fa-backward" aria-hidden="true"></i></button>
+        <button class="play-f2" ><i class="fa fa-forward" aria-hidden="true"></i></button>
+      </div>
+
+      </div>
+      <div class="video-player" id="player-3">
+
+        <video
+        onclick="myFunction3()"
+        id="my-video-3"
+        class="video-js"
+        controls
+        preload="auto"
+        width="470"
+        height="264"
+        poster="img/thumbnail3.png"
+        data-setup="{}"
+      >
+      <source src=http://techslides.com/demos/sample-videos/small.mp4 type=video/mp4>
+        
+       
+      </video>
+      <div class="controls">
+        <button onclick="myFunction3()" class="play-pause">
+          <i class="fa fa-play"></i>
+          <i class="fa fa-pause"></i>
+        </button>
+        <button class="play-b3" ><i class="fa fa-backward" aria-hidden="true"></i></button>
+        <button class="play-f3" ><i class="fa fa-forward" aria-hidden="true"></i></button>
+      </div>
+
+      </div>
+
+  </div>
+
+
+</div>
+
+<div class="video-part-text">
+  <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris <br> condimentum nibh, ut fermentum massa justo sit amet risus. Cras<br> mattis consectetur purus sit amet fermentum.</p>
+  <div  class="knopdiv">
+    <button class="contact-btn"><a href="#">TRY FREE</a></button>
+   </div>
+</div>
+
+
+  </main>
+
+  <!-- Js altijd plaatsen voor het sluiten van de body -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+
+<footer>
+
+  <h5>Choose the plan that’s right for you</h5>
+
+<!-- tabs -->
+<div class="tab-panels">
+  <ul class="tabs">
+      <li rel="panel1" class="active">Basic</li>
+      <li rel="panel2">Standard</li>
+      <li rel="panel3">Premium</li>
+
+  </ul>
+
+  <div id="panel1" class="panel active">
+
+    <div class="inhoud-panel">
+    <p>Monthly price: <span style="color:#ED2517">€1,99</span><br>
+      Video quality: <span style="color:#ED2517">Skeer</span><br>
+      Resolution: <span style="color:#ED2517">1K</span><br>
+      Screens: <span style="color:#ED2517 ">1</span><br>
+      Unlimited films and TV: <span style="color:#ED2517">Yes</span><br>
+      Cancel at any time:  <span style="color:#ED2517">No</span>
+    </p>
+  <div class="knopdiv">
+    <button class="btn-pick"><a href="#">PICK THIS PLAN</a></button>
+  </div>
+      <h6>Downgrade or update at any time</h6>
+    </div>
+
+  </div>
+  
+  <div id="panel2" class="panel">
+    <div class="inhoud-panel">
+      <p>Monthly price: <span style="color:#ED2517">€9,99</span><br>
+        Video quality: <span style="color:#ED2517">Medium</span><br>
+        Resolution: <span style="color:#ED2517">4K</span><br>
+        Screens: <span style="color:#ED2517 ">2</span><br>
+        Unlimited films and TV: <span style="color:#ED2517">Yes</span><br>
+        Cancel at any time:  <span style="color:#ED2517">Yes</span>
+      </p>
+    <div class="knopdiv">
+      <button class="btn-pick"><a href="#">PICK THIS PLAN</a></button>
+    </div>
+        <h6>Downgrade or update at any time</h6>
+      </div>
+  </div>
+  <div id="panel3" class="panel">
+    <div class="inhoud-panel">
+      <p>Monthly price: <span style="color:#ED2517">€13,99</span><br>
+        Video quality: <span style="color:#ED2517">Best</span><br>
+        Resolution: <span style="color:#ED2517">4K+HDR</span><br>
+        Screens: <span style="color:#ED2517 ">4</span><br>
+        Unlimited films and TV: <span style="color:#ED2517">Yes</span><br>
+        Cancel at any time:  <span style="color:#ED2517">Yes</span>
+      </p>
+    <div class="knopdiv">
+      <button class="btn-pick"><a href="#">PICK THIS PLAN</a></button>
+    </div>
+        <h6>Downgrade or update at any time</h6>
+      </div>
+  </div>
+
+</div>
+
+
+</footer>
+
+</html>
